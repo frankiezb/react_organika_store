@@ -1,0 +1,9 @@
+.product
+{
+    border: 1px solid black;
+    display: inline-block;
+    width: 240 px;
+    height: 320px;
+    margin: 5px 7px;
+    border-radius: 4px;
+}

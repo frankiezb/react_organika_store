@@ -1,12 +1,19 @@
+import { useEffect,useState} from "react";
 import "./products.css";
 import QuantityPicker from "./quantityPicker";
 
-function Product()
+
+function Product(props)
 {
+    
+    useEffect(function()
+    {
+        console.log("hello im a product")
+    },[]);
     return(
         <div className="product">
-            <img src="https://picsum.photos/200/300" alt="" />
-            <h5>hello i am a products</h5>
+            <img src={"/images/"+ props.data.image} alt="" />
+            <h5>{props.data.title}</h5>
             <QuantityPicker/>
             
         </div>

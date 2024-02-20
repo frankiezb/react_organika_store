@@ -14,8 +14,14 @@ function Product(props)
         <div className="product">
             <img src={"/images/"+ props.data.image} alt="" />
             <h5>{props.data.title}</h5>
-            <QuantityPicker/>
             
+            <div className="prices">
+                <label className="total">{props.data.price.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}</label>
+                <label className="price">${props.data.price.toFixed(2)}</label>
+            </div>
+            <button type="button" className="btn btn-primary">Add To Cart</button>
+
+            <QuantityPicker/>
         </div>
     );
 }

@@ -1,15 +1,31 @@
 .product
 {
-    border: 1px solid black;
+    border: 1px solid rgb(149, 137, 137);
     display: inline-block;
     width: 240 px;
     height: 320px;
     margin: 5px 7px;
     border-radius: 4px;
+    background-color: white;
 }
 .img{
     .product img{
         width: 180px;
         height: 180px;
     }
-}
+
+}.product .prices {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .product .prices .total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ee6c4d;
+  }
+  
+  .product .prices .price {
+    font-size: 16px;
+    color: #293241;
+  }

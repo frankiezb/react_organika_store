@@ -18,7 +18,7 @@ function Catalog()
     }
 
     return(
-        <div>
+        <div className="catalog">
         <h1> {productstate.length} here look my awesome products</h1>
         {productstate.map(productArrow => <Product data = {productArrow}/>)}
         
